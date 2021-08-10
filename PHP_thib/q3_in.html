@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Q3 & Q6 in</title>
+  </head>
+  <body>
+
+    <div class="top">
+      <form class="menuprincipal" action="home.php" method="post">
+        <input type="hidden" id="pseudo" name="pseudo" value="gandalf">
+        <input type="hidden" id="mdp" name="mdp" value="melon">
+        <button type="submit" class="btn_h" onclick="document.location='home.php'"><i class="fa fa-home"></i> Menu principal</button> <br>
+      </form>
+    </div>
+    <!--<div class="top"><button class="btn_h" onclick="document.location='home.php'"><i class="fa fa-home"></i> Menu principal</button> <br></div> -->
+
+    <div class="container">
+      <div class="form_header">
+        Quelles sont les champs que vous souhaitez afficher ?
+      </div>
+    </div>
+      <div class="container_form_q3">
+        <form action="q3_out.php" method="post">
+          <div>
+            <input type="checkbox" id="box1" name="box1" value="id">
+            <label for="box1"> id</label><br>
+            <input type="checkbox" id="box2" name="box2" value="titre">
+            <label for="box2"> titre</label><br>
+            <input type="checkbox" id="box3" name="box3" value="artiste">
+            <label for="box3"> artiste</label><br>
+            <input type="checkbox" id="box4" name="box4" value="annee_sortie">
+            <label for="box4"> année de sortie</label><br>
+            <input type="checkbox" id="box5" name="box5" value="annee_edition">
+            <label for="box5"> année d'édition</label><br>
+            <input type="checkbox" id="box6" name="box6" value="nb_disques">
+            <label for="box6"> nombre de disques</label><br>
+            <input type="checkbox" id="box7" name="box7" value="commentaire">
+            <label for="box7"> commentaire</label><br>
+          </div>
+          <br>
+          <div>
+		    <div class="form_header_inner">
+            Ordonner par: <br><br>
+            <input type="checkbox" id="ordre_alphabet" name="ordre_alphabet" value="artiste">
+            <label for="ordre_alphabet"> artiste</label>
+            <input type="checkbox" id="ordre_annee" name="ordre_annee" value="annee_edition">
+            <label for="ordre_annee"> année d'édition</label>
+			</div>
+          </div>
+		  <div class="form_header">
+          <input type="submit" name="" value="Valider">
+		  <div>
+        </form>
+      </div>
+
+
+
+  </body>
+</html>

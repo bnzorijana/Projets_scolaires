@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Q4</title>
+  </head>
+  <body>
+
+    <div class="top">
+      <form class="menuprincipal" action="home.php" method="post">
+        <input type="hidden" id="pseudo" name="pseudo" value="gandalf">
+        <input type="hidden" id="mdp" name="mdp" value="melon">
+        <button type="submit" class="btn_h" onclick="document.location='home.php'"><i class="fa fa-home"></i> Menu principal</button> <br>
+      </form>
+    </div>
+	
+    <!--<div class="top"><button class="btn_h" onclick="document.location='home.php'"><i class="fa fa-home"></i> Menu principal</button> <br></div> -->
+
+    <!-- Tu me diras ce que tu en penses d'avoir structuré les champs avec un
+    tableau, ça m'avait l'air plus pratique à mettre en forme par la suite -->
+    <div class="container">
+	<div class="form_header">
+	Vous pouvez ajouter une nouvelle entrée à la base de données:
+	</div>
+    <form action="./q4_out.php" method="post">
+    <table class="tab_sql" width=100%>
+      <thead>
+        <tr>
+          <th><label for="titre">titre</label></th>
+          <th><label for="artiste">artiste</label></th>
+          <th><label for="annee_sortie">année de sortie</label></th>
+          <th><label for="annee_edition">année d'édition</label></th>
+          <th><label for="nb_disques">nombre de disques</label></th>
+          <th><label for="commentaire">commentaire</label></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input class="in_txt_q4" type="text" id="titre" name="titre" value="" placeholder="Limité à 50 caractères..."></td>
+          <td><input class="in_txt_q4" type="text" id="artiste" name="artiste" value="" placeholder="Limité à 50 caractères..."></td>
+          <td><input class="in_txt_q4" type="text" id="annee_sortie" name="annee_sortie" value="" placeholder="Un nombre entier..."></td>
+          <td><input class="in_txt_q4" type="text" id="annee_edition" name="annee_edition" value="" placeholder="Un nombre entier..."></td>
+          <td><input class="in_txt_q4" type="text" id="nb_disques" name="nb_disques" value="" placeholder="Un nombre entier..."></td>
+          <td><input class="in_txt_q4" type="text" id="commentaire" name="commentaire" value="" placeholder="Limité à 100 caractères..."></td>
+        </tr>
+      </tbody>
+    </table>
+	<div class="form_header">
+	<input type="submit" value="Insérer">
+	</div>
+    </form>
+    </div>
+
+
+  </body>
+</html>

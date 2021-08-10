@@ -1,0 +1,548 @@
+.btn_f {
+  background-color:blue;/* Green */
+  position:relative;
+  border:none;
+  border-radius:6px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /*font-size: 16px;*/
+  line-height: 1.2rem;
+  font-size: 1.2rem;
+  box-shadow: inset 0 0 20px Cyan;
+  transition: background-color 0.5s, color 2s;
+}
+
+.btn_f:hover {
+	background-color: white;
+	color: Green;
+	cursor: pointer;
+	box-shadow: 0 0 10px Green;
+}
+
+.btn_f:focus { outline: none;}
+
+.btn_h {
+	border:none;
+	border-radius:6px;
+	background-color:Red;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	/*font-size: 16px;*/
+	line-height: 1.2rem;
+	font-size: 1.2rem;
+	transition: background-color 0.5s, color 2s;
+}
+
+.btn_h:hover {
+	background-color: white;
+	color: Red;
+	cursor: pointer;
+	box-shadow: inset 0 0 5px Red;
+}
+
+.btn_h:focus { outline: none;}
+
+input[type='submit']{
+	border:none;
+	border-radius:6px;
+	background-color:#33cc33;
+	color: white;
+	cursor:pointer;
+	padding: 8px 32px;
+	line-height: 1.2rem;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	box-shadow: 0 9px #999;
+	transition: background-color 0.5s, color 2s;
+}
+
+input[type='submit']:hover{
+	font-size:1.2rem;
+	background-color: white;
+	color: #33cc33;
+	cursor: pointer;
+	box-shadow: inset 0 0 5px #33cc33, 0 9px #999;}
+
+input[type='submit']:active {
+	background-color:#33cc33;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+input[type='submit']:focus { outline: none;}
+
+.arrow {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.tab_sql{
+	margin:auto;
+	border-collapse: collapse;
+}
+
+.tab_sql td {
+	text-align:center;
+	/*border: 1px solid #ddd;*/
+	padding: 8px;
+	line-height: 1.2rem;
+}
+
+.tab_sql th {
+	text-align:center;
+	/*border: 1px solid #ddd;*/
+	padding: 12px;
+	line-height: 1.4rem;
+}
+
+.tab_sql tr:nth-child(even){background-color: #f2f2f2;}
+.tab_sql tr:nth-child(odd){background-color: #f2f2d2;}
+
+.tab_sql tr:hover {background-color: DarkTurquoise;color:white;}
+.tab_sql td:hover {background-color: white; color:black; padding:16px 0; font-size:1.2rem; box-shadow: inset 0 0 5px Cyan;}
+.tab_sql th:hover {background-color: white; color:#33cc33; padding:12px 0; font-size:1.4rem; box-shadow: inset 0 0 5px #33cc33;text-transform:uppercase;
+}
+
+
+.tab_sql th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #33cc33;
+  color: white;
+}
+
+
+ /* .container permet de centrer du contenus */
+.container {
+	width:90%;
+	margin:20px auto 0px;
+	/*border:solid green 2px;*/
+	text-align:center;
+	margin-bottom:collapse;
+}
+
+.container_form_q3 {
+	width:90%;
+	margin:0px auto;
+	background-color:white;
+	/*border:solid Cyan 2px;*/
+}
+
+.container_form_q3 > form {
+	width:30%;
+	margin:auto;
+}
+
+.container_form_q3 label {
+	padding: 5px 0;
+	line-height: 1.2rem;
+}
+
+.container_form_q3 label:hover {font-size:1.2rem; text-transform:uppercase;}
+
+form {
+	/*width:90%;
+	margin:atuo;*/
+	background-color:white;
+	/*border: solid red 2px;*/
+}
+
+.menuprincipal {
+	background-color: transparent;
+}
+
+select {font-size: 1.2rem;}
+option:hover {color:black;background-color:Cyan;}
+
+/* Utilisé comme un titre au dessus des form ou autre objet*/
+.form_header {
+	background-color:white;
+	padding:15px 0;
+	text-align:center;
+	line-height: 1.2rem;
+}
+
+.form_header:hover{
+	font-size: 1.2rem;
+}
+
+/* utilisé à l'intérieur des forms ou autre objet */
+.form_header_inner {
+	background-color:white;
+	padding:8px 0;
+	text-align:center;
+	line-height: 1.2rem;
+}
+
+.form_header_inner:hover{
+	font-size: 1.2rem;
+	
+}
+
+/* Taille des champs à la question 4 */
+.in_txt_q4 {
+  width: 90%;
+}
+
+/* q4_out */
+.msg_err {
+	padding: 60px 0;
+	background-color:Brown;
+	color:white;
+	font-size:1.4rem;
+	border: 2px solid white;
+	border-radius:12px;
+	text-transform:uppercase;
+	box-shadow: inset 0 0 30px Red, 0 0 30px Red;
+}
+
+/* q4_out */
+.msg_conf {
+	padding: 60px 0;
+	background-color:#33cc33;
+	color:white;
+	font-size:1.4rem;
+	border: 2px solid white;
+	border-radius:12px;
+	text-transform:uppercase;
+	box-shadow: inset 0 0 30px SpringGreen, 0 0 30px SpringGreen;
+}
+
+body {
+	background-color:Navy; /*SpringGreen, Aqua, DarkTurquoise, Brown */
+}
+
+/* .top est la bannière qui s'affiche tout en haut de chaque page */
+.top {
+	color:white;
+	text-align:center;
+	width:100%;
+	/*border:solid black 1px;*/
+	margin: 0 0;
+	padding: 30px 0;
+	background-color:Navy;
+	box-shadow: inset 0 0 20px Cyan;
+}
+
+/* Pour la page d'acceuil (image)*/
+.hero {
+	background: url(turntable-309662.jpg) no-repeat;
+	background-position: center;
+	background-size: contain;
+	width:100%;
+	/*border: solid green 2px;*/
+	background-color:white;
+}
+
+.hero__inner {
+  padding: 2.5em 0 20em 0;
+  text-align:center;
+  /*border: solid black 2px;*/
+}
+
+/* Pour la page d'acceuil (buttons questions)*/
+.home_flex {
+	display:flex;
+	justify-content: space-around; 
+	flex-direction:row;
+	width:95%;
+	margin:auto;
+	/*border:solid black 2px;*/
+}
+
+/* Q1 */
+.one .text_one {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.one .text_one::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.one:hover .text_one {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q2 */
+.two .text_two {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.two .text_two::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.two:hover .text_two {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q3 */
+.three .text_three {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.three .text_three::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.three:hover .text_three {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q4 */
+.four .text_four {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.four .text_four::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.four:hover .text_four {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q5 */
+.five .text_five {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.five .text_five::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.five:hover .text_five {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q6 */
+.six .text_six {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.six .text_six::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.six:hover .text_six {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q7 */
+.seven .text_seven {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.seven .text_seven::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.seven:hover .text_seven {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Q8 */
+.eight .text_eight {
+  visibility: hidden;
+  width: 240px;
+  background-color: Green;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -120px;
+  
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.eight .text_eight::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent Green transparent;
+}
+
+.eight:hover .text_eight {
+  visibility: visible;
+  opacity: 1;
+}

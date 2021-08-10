@@ -1,0 +1,23 @@
+class:
+btn_f		boutons de la page home.php vers les pages filles/feuilles
+btn_h		boutons des pages filles vers la page home.php
+in_txt_q4	champs <input text> dans q4_in.html
+tab_sql		valeur par défaut de l'argument $class de afficher_tableau()		
+q8_c		les <div> de q8.php où sont affichés le nb d'albums et nb de disques
+menu		la <div> dans q3_in (peut être supprimé ou étendu aux autres formulaires)
+msg_err		les <div> pour afficher un message d'erreur (voir problème en bas)	
+msg_conf	les <div> pour afficher un message de confirmation (dans le cas l'ajout d'une entrée à la bdd q4_out.php)
+
+
+id:
+tab_q4		tableau pour structurer les champs <input text> dans q4_in.html
+
+
+liens:
+pour faire des boutons avec des icônes: https://www.w3schools.com/howto/howto_css_icon_buttons.asp
+
+
+problème:
+Je n'arrive pas à faire remonter les erreurs de la base de données avec PDO.
+Pour l'instant j'ai un peu triché, en faisant apparaitre un message d'erreur avec un "if" mais c'est pas la bonne manière de gérer les erreurs.
+
